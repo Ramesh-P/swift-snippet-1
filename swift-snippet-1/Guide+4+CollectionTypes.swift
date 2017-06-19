@@ -15,6 +15,8 @@ extension LanguageGuide {
         switch ex {
         case 1:
             example_1()
+        case 2:
+            example_2()
         default:
             break
         }
@@ -22,7 +24,7 @@ extension LanguageGuide {
     
     func example_1() {
         
-        /* Array: ordered collection of values of same type */
+        /* Array: ordered collection of values of same type. Values in an array can repeat*/
         
         // Create an empty array
         let myEmptyArray1: [Int] = []
@@ -124,4 +126,111 @@ extension LanguageGuide {
             }
         }
     }
+    
+    func example_2() {
+        
+        /* Set: unordered collection of distinct values of same type. Values in a set can't repeat*/
+        
+        // Create an empty set
+        let myEmptySet = Set<Int>()
+        
+        // Create a set with literal values
+        let myLiteralSet1 = Set<Int>(arrayLiteral: 1, 2, 3)
+        let myLiteralSet2: Set = ["A", "B", "C"]
+        
+        // Create a copy of a set
+        let mySet = Set<String>(arrayLiteral: "A", "B", "C")
+        var mySetCopy = mySet
+        //mySetCopy.insert("D")
+        
+        // Create mutable and immutable sets
+        var myMutableSet = Set<Int>(arrayLiteral: 1, 2, 3)
+        let myImmutableSet: Set = [1, 2, 3]
+        
+        // Work with a set
+        var myItems = Set<String>(arrayLiteral: "car", "van", "bus")
+        
+        // Count number of items in a set
+        let count = myItems.count
+        
+        // Check if a set is empty
+        //myItems = []
+        if myItems.isEmpty {
+            //print("Set is empty")
+        } else {
+            //print(myItems.count)
+        }
+        
+        // Insert a new value
+        myItems.insert("truck")
+        
+        // Check for a value
+        if myItems.contains("car") {
+            //print("Car is in my list")
+        }
+        
+        // Remove a value
+        myItems.remove("truck")
+        
+        // Remove first value
+        myItems.removeFirst()
+        
+        // Remove all values
+        myItems.removeAll()
+        
+        // Iterate through a set
+        let numbers: Set = [0, 1, 2, 3, 4]
+        
+        // Unsorted list of values
+        for number in numbers {
+            //print(number)
+        }
+        
+        // Sorted list of values
+        for number in numbers.sorted() {
+            //print(number)
+        }
+        
+        // Set operations
+        let setA: Set = [1, 2, 3, 4, 5, 6]
+        let setB: Set = [1, 3, 5, 7, 9]
+        
+        // Intersection
+        print(setA.intersection(setB).sorted())
+        
+        // Union
+        print(setA.union(setB).sorted())
+        
+        // Subtract
+        print(setA.subtracting(setB).sorted())
+        
+        // Difference
+        print(setA.symmetricDifference(setB).sorted())
+        
+        let set1: Set = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+        let set2: Set = [1, 3, 5, 7, 9]
+        let set3: Set = [2, 4, 6, 8]
+        let set4: Set = [7, 9, 11]
+        
+        // Superset
+        print(set1.isSuperset(of: set2))
+        
+        // Subset
+        print(set2.isSubset(of: set1))
+        
+        // Disjoint
+        print(set2.isDisjoint(with: set3))
+        
+        // StrictSuperset
+        print(set2.isStrictSuperset(of: set4))
+        
+        // StrictSubset
+        print(set4.isStrictSubset(of: set2))
+    }
+    
+    
+    
+    
+    
+    
 }
