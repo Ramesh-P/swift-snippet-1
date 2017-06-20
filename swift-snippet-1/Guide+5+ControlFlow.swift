@@ -23,6 +23,10 @@ extension LanguageGuide {
             example_7()
         case 8:
             example_8()
+        case 9:
+            example_9()
+        case 10:
+            example_10()
         default:
             break
         }
@@ -270,9 +274,51 @@ extension LanguageGuide {
         }
     }
     
+    func example_9() {
+        
+        /* Labeled Statements */
+        
+        let numbers: String = "123456789"
+        let find: Character = "6"
+        
+        findLoop: for number in numbers {
+            switch number {
+            case let number where number == find:
+                break findLoop
+            case "1":
+                print("one")
+            case "2":
+                print("two")
+            case "3":
+                print("three")
+            case "4":
+                print("four")
+            case "5":
+                print("five")
+            case "6":
+                print("six")
+            case "7":
+                print("seven")
+            case "8":
+                print("eight")
+            case "9":
+                print("nine")
+            default:
+                break
+            }
+        }
+    }
     
-    
-    
-    
-    
+    func example_10() {
+        
+        /* Early Exit: guard statement require that a condition must be true in order for the code after the guard statement to be executed. Also guard statement always has an else clause */
+        
+        let person: String? = "John"
+        
+        guard let name = person else {
+            //print("Hi there!")
+            return
+        }
+        //print("Hi \(name)!")
+    }
 }

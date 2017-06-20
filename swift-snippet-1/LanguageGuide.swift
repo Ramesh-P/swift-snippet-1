@@ -15,7 +15,7 @@ class LanguageGuide: UIViewController {
         super.viewDidLoad()
         
         // Initialize
-        let id: Int = 8
+        let id: Int = 10
         runExamples(id)
     }
 
@@ -30,7 +30,7 @@ class LanguageGuide: UIViewController {
         switch id {
         case 1...3:
             collectionTypes(id)
-        case 4...8:
+        case 4...10:
             controlFlow(id)
         default:
             break
