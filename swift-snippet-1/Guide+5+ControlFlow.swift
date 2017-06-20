@@ -19,6 +19,8 @@ extension LanguageGuide {
             example_5()
         case 6:
             example_6()
+        case 7:
+            example_7()
         default:
             break
         }
@@ -111,6 +113,103 @@ extension LanguageGuide {
             //print("Good evening")
         } else {
             //print("Goodnight")
+        }
+    }
+    
+    func example_7() {
+        
+        /* Switch: considers a value and compares it against several possible matching patterns and executes codes for the first matched pattern. */
+        
+        // Simple
+        var character1: String = String()
+        //character1 = "a"
+        
+        if !(character1.isEmpty) {
+            switch character1 {
+            case "a":
+                print("First alphabet")
+            case "z":
+                print("Last alphabet")
+            default:
+                print("Some other character")
+            }
+        }
+        
+        // Compound
+        var number1: Int = 0
+        //number1 = 4
+        
+        if number1 != 0 {
+            switch number1 {
+            case 1, 3, 5, 7, 9:
+                print("Odd number")
+            case 2, 4, 6, 8:
+                print("Even number")
+            default:
+                break
+            }
+        }
+        
+        // Interval Matching
+        var number2: Int = 0
+        //number2 = 100
+        
+        if number2 != 0 {
+            switch number2 {
+            case 1...9:
+                print("Single digit number")
+            case 10...99:
+                print("Double digit number")
+            default:
+                print("Large number")
+            }
+        }
+        
+        // Tuples
+        var set1: (Int, Int) = (0, 0)
+        //set1 = (1, -1)
+        
+        if set1 != (0, 0) {
+            switch set1 {
+            case (0, 1...10):
+                print("On the +ve y-axis")
+            case (1...10, 0):
+                print("on the +ve x-axis")
+            case (_, _):
+                print("Somewhere on the graph")
+            default:
+                break
+            }
+        }
+        
+        // Value Binding
+        let execute1: Bool = false
+        
+        if execute1 {
+            let person = ("Jane", 60)
+            switch person {
+            case ("John", let age):
+                print("John is \(age) years old")
+            case ("Jane", let age):
+                print("Jane is \(age) years old")
+            default:
+                break
+            }
+        }
+        
+        // Where Clause
+        let execute2: Bool = false
+        
+        if execute2 {
+            let name: String = "Jane"
+            switch name {
+            case (let n) where n == "John":
+                print("Hi \(n)!")
+            case (let n) where n == "Jane":
+                print("Welcome \(n)!")
+            default:
+                print("Hello!")
+            }
         }
     }
     
