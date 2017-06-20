@@ -17,6 +17,8 @@ extension LanguageGuide {
             example_4()
         case 5:
             example_5()
+        case 6:
+            example_6()
         default:
             break
         }
@@ -79,6 +81,37 @@ extension LanguageGuide {
             index += 1
             //print(days[index])
         } while index < weekdays
+    }
+    
+    func example_6() {
+        
+        /* If: executes a set of statements only if that condition is true. */
+        
+        // If
+        var time = 9
+        if time < 12 {
+            //print("Good morning")
+        }
+        
+        // If-Else
+        time = 20
+        if time < 12 {
+            //print("Good morning")
+        } else {
+            //print("Goodnight")
+        }
+        
+        // If-ElseIf-Else
+        time = 20
+        if time < 12 {
+            //print("Good morning")
+        } else if time >= 12 && time < 16 {
+            //print("Good afternoon")
+        } else if time >= 16 && time < 20 {
+            //print("Good evening")
+        } else {
+            //print("Goodnight")
+        }
     }
     
     
