@@ -15,6 +15,8 @@ extension LanguageGuide {
         switch ex {
         case 4:
             example_4()
+        case 5:
+            example_5()
         default:
             break
         }
@@ -55,6 +57,28 @@ extension LanguageGuide {
         for even in stride(from: 2, to: 10, by: 2) {
             //print(even)
         }
+    }
+    
+    func example_5() {
+        
+        /* While: evaluates its condition at the start. Executes until the condition is false */
+        
+        let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"]
+        var index = 0
+        let totalDays = 7
+        while index < totalDays {
+            //print(days[index])
+            index += 1
+        }
+        
+        /* Repeat-While: executes at the start. Evaluates its condition at the end. Executes until the condition is false */
+        
+        let weekdays = 5
+        index = 0
+        repeat {
+            index += 1
+            //print(days[index])
+        } while index < weekdays
     }
     
     
