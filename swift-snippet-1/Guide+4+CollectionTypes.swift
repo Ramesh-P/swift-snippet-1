@@ -26,7 +26,7 @@ extension LanguageGuide {
     
     func example_1() {
         
-        /* Array: ordered collection of values of same type. Values in an array can repeat*/
+        /* Array: ordered collection of values of same type. Values in an array can repeat */
         
         // Create an empty array
         let myEmptyArray1: [Int] = []
@@ -131,7 +131,7 @@ extension LanguageGuide {
     
     func example_2() {
         
-        /* Set: unordered collection of distinct values of same type. Values in a set can't repeat*/
+        /* Set: unordered collection of distinct values of same type. Values in a set can't repeat */
         
         // Create an empty set
         let myEmptySet = Set<Int>()
@@ -232,7 +232,7 @@ extension LanguageGuide {
     
     func example_3() {
         
-        /* Dictionary: unordered collection of key, values pairs. All keys must be same type. All values must be same type. Key name must be unique*/
+        /* Dictionary: unordered collection of key, values pairs. All keys must be same type. All values must be same type. Key name must be unique */
         
         // Create an empty dictionary
         let myEmptyDictionary1: [Int : String] = Dictionary()
