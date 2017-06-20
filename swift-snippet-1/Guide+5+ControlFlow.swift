@@ -21,6 +21,8 @@ extension LanguageGuide {
             example_6()
         case 7:
             example_7()
+        case 8:
+            example_8()
         default:
             break
         }
@@ -210,6 +212,61 @@ extension LanguageGuide {
             default:
                 print("Hello!")
             }
+        }
+    }
+    
+    func example_8() {
+        
+        /* Control Transfer Statements */
+        
+        // continue: tells a loop to stop what it is doing and start again at the beginning of the next iteration through the loop.
+        let numbers = "123456789"
+        var oddNumber: [Character] = []
+        let evenNumbers: [Character] = ["2", "4", "6", "8"]
+        
+        for number in numbers {
+            if evenNumbers.contains(number) {
+                continue
+            } else {
+                oddNumber.append(number)
+            }
+        }
+        //print(oddNumber)
+        
+        // break: ends execution of an entire control flow statement immediately.
+        var calendar: String = String()
+        //calendar = "Tue"
+        
+        switch calendar {
+        case "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat":
+            print("It's a day")
+        case "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec":
+            print("It's a month")
+        default:
+            break
+        }
+        
+        // fallthrough: allows statements to fall through the bottom of each case and into the next one.
+        let number: Character = "3"
+        let odd: [Character] = ["1", "3", "5", "7"]
+        let prime: [Character] = ["2", "3", "5", "7"]
+        
+        switch number {
+        case "1", "2", "3", "4", "5", "6", "7", "8", "9":
+            //print("It's an integer")
+            fallthrough
+        case "o":
+            if odd.contains(number) {
+                //print("It's an odd number")
+            }
+            fallthrough
+        case "p":
+            if prime.contains(number) {
+                //print("It's a prime number")
+            }
+            fallthrough
+        default:
+            break
         }
     }
     
