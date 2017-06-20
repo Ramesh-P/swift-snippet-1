@@ -17,6 +17,8 @@ extension LanguageGuide {
             example_1()
         case 2:
             example_2()
+        case 3:
+            example_3()
         default:
             break
         }
@@ -228,9 +230,88 @@ extension LanguageGuide {
         print(set4.isStrictSubset(of: set2))
     }
     
-    
-    
-    
-    
-    
+    func example_3() {
+        
+        /* Dictionary: unordered collection of key, values pairs. All keys must be same type. All values must be same type. Key name must be unique*/
+        
+        // Create an empty dictionary
+        let myEmptyDictionary1: [Int : String] = Dictionary()
+        let myEmptyDictionary2 = [Int : String]()
+        let myEmptyDictionary3: [Int : String] = [:]
+        
+        // Create a dictionary with literal values
+        let myLiteralDictionary1: [Int : String] = [1:"Sun", 2:"Mon", 3:"Tue", 4:"Wed", 5:"Thu", 6:"Fri", 7:"Sat"]
+        let myLiteralDictionary2 = [1:"Sun", 2:"Mon", 3:"Tue", 4:"Wed", 5:"Thu", 6:"Fri", 7:"Sat"]
+        
+        // Create a copy of a dictionary
+        let myDictionary: [Int : String] = [40:"John", 30:"Jane"]
+        var myDictionaryCopy = myDictionary
+        //myDictionaryCopy.updateValue("David", forKey: 10)
+        
+        // Create mutable and immutable dictionary
+        var myMutableDictionary = [1:"one", 2:"two", 3:"three"]
+        let myImmutableDictionary = [1:"one", 2:"two", 3:"three"]
+        
+        // Work with a dictionary
+        var coins: [Int : String] = [1:"Penny", 5:"Nickel"]
+        
+        // Count number of items in a dictionary
+        let count = coins.count
+        
+        // Check if a dictionary is empty
+        //coins = [:]
+        if coins.isEmpty {
+            //print("There are no coins")
+        } else {
+            //print(coins.count)
+        }
+        
+        // Add a value to a dictionary
+        coins[10] = "dime"
+        coins.updateValue("quarter", forKey: 25)
+        
+        // Update a value in a dictionary
+        coins[10] = "Dime"
+        coins.updateValue("Quarter", forKey: 25)
+        
+        // Get a value from a dictionary
+        if let coin = coins[1] {
+            //print(coin)
+        }
+        
+        // Delete a value
+        coins[25] = nil
+        coins.removeValue(forKey: 10)
+        
+        // Delete all values
+        coins.removeAll()
+        
+        // Iterate through an array
+        let students: [String : String] = ["Boy":"John", "Girl":"Jane"]
+        
+        // Get key, value pair together
+        for student in students {
+            //print(student)
+        }
+        
+        // Get key and value seperately
+        for (sex, name) in students {
+            //print(sex)
+            //print(name)
+        }
+        
+        // Get keys
+        for sex in students.keys {
+            //print(sex)
+        }
+        
+        // Get values
+        for name in students.values {
+            //print(name)
+        }
+        
+        // Cretae an array of keys and values
+        let keysArray = [String](students.keys)
+        let valuesArray = [String](students.values)
+    }
 }
