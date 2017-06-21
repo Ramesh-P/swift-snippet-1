@@ -14,6 +14,7 @@
 		CF72376E1EF37F3500A42729 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF72376D1EF37F3500A42729 /* Assets.xcassets */; };
 		CF7237711EF37F3500A42729 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF72376F1EF37F3500A42729 /* LaunchScreen.storyboard */; };
 		CFBA9A471EF8C8D10055EB38 /* Guide+5+ControlFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBA9A461EF8C8D10055EB38 /* Guide+5+ControlFlow.swift */; };
+		CFBA9A491EF9D8D80055EB38 /* Guide+6+Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFBA9A481EF9D8D80055EB38 /* Guide+6+Functions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		CF7237701EF37F3500A42729 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF7237721EF37F3500A42729 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CFBA9A461EF8C8D10055EB38 /* Guide+5+ControlFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Guide+5+ControlFlow.swift"; sourceTree = "<group>"; };
+		CFBA9A481EF9D8D80055EB38 /* Guide+6+Functions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Guide+6+Functions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				CF7237661EF37F3400A42729 /* AppDelegate.swift */,
 				CF4DB4D01EF71A5B009942AC /* Guide+4+CollectionTypes.swift */,
 				CFBA9A461EF8C8D10055EB38 /* Guide+5+ControlFlow.swift */,
+				CFBA9A481EF9D8D80055EB38 /* Guide+6+Functions.swift */,
 				CF7237681EF37F3400A42729 /* LanguageGuide.swift */,
 				CF72376D1EF37F3500A42729 /* Assets.xcassets */,
 				CF72376F1EF37F3500A42729 /* LaunchScreen.storyboard */,
@@ -145,6 +148,7 @@
 			files = (
 				CF7237691EF37F3400A42729 /* LanguageGuide.swift in Sources */,
 				CF4DB4D11EF71A5B009942AC /* Guide+4+CollectionTypes.swift in Sources */,
+				CFBA9A491EF9D8D80055EB38 /* Guide+6+Functions.swift in Sources */,
 				CFBA9A471EF8C8D10055EB38 /* Guide+5+ControlFlow.swift in Sources */,
 				CF7237671EF37F3400A42729 /* AppDelegate.swift in Sources */,
 			);
