@@ -133,18 +133,48 @@ extension LanguageGuide {
         
         /* Function Types */
         
+        // Using Function Types
+        func addTwoNumbers(a: Int, b: Int) -> Int {
+            return a + b
+        }
         
+        func multiplyTwoNumbers(a: Int, b: Int) -> Int {
+            return a * b
+        }
         
+        func divideTwoNumbers(a: Int, b: Int) -> Int {
+            return a / b
+        }
         
+        func subtractTwoNumbers(a: Int, b: Int) -> Int {
+            return a - b
+        }
         
+        var mathFunction: (Int, Int) -> Int
+        mathFunction = addTwoNumbers(a:b:)
+        //print(mathFunction(2, 3))
         
+        mathFunction = multiplyTwoNumbers(a:b:)
+        //print(mathFunction(2, 3))
         
+        mathFunction = divideTwoNumbers(a:b:)
+        //print(mathFunction(4, 2))
         
-
+        mathFunction = subtractTwoNumbers(a:b:)
+        //print(mathFunction(7, 4))
+        
+        // Function Types as Parameter Types
+        func getResult(_ mathFunction: (Int, Int) -> Int, a: Int, b: Int) -> Int {
+            return mathFunction(a, b)
+        }
+        //print(getResult(addTwoNumbers(a:b:), a: 2, b: 3))
+        //print(getResult(multiplyTwoNumbers(a:b:), a: 2, b: 3))
+        //print(getResult(divideTwoNumbers(a:b:), a: 4, b: 2))
+        //print(getResult(subtractTwoNumbers(a:b:), a: 7, b: 4))
+        
+        // Function Types as Return Types
+        
+        /* Nested Functions */
+        
     }
-    
-    
-    
-    
-    
 }
