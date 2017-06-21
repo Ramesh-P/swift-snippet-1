@@ -15,7 +15,7 @@ class LanguageGuide: UIViewController {
         super.viewDidLoad()
         
         // Initialize
-        let id: Int = 11
+        let id: Int = 12
         runExamples(id)
     }
 
@@ -34,6 +34,8 @@ class LanguageGuide: UIViewController {
             controlFlow(id)
         case 11:
             functions(id)
+        case 12:
+            enumerations(id)
         default:
             break
         }
